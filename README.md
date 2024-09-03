@@ -2,8 +2,7 @@
  <br/> <br/> <br/> <br/> <br/> 
 <img width="371" alt="Screenshot 2024-08-08 at 12 55 05 AM" src="https://github.com/user-attachments/assets/c2878eb1-6950-43e3-b1e4-92f2f17226da">
  <br/> <br/>
-### APT-Reels-fi is a platform designed for avid reel viewers, offering them the opportunity to place bets on the engagement of reels. If the engagement of a reel increases within a specified time frame, users can earn rewards based on their predictions.
-
+### Reels-fi is a platform designed for avid reel viewers, offering them the opportunity to place bets on the engagement of reels. If the engagement of a reel increases within a specified time frame, users can earn rewards based on their predictions.
 
 ## Key Features
 ### Here are the Reels-Fi features in point form:
