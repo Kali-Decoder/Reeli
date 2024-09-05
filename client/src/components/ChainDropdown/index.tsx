@@ -11,7 +11,8 @@ const ChainDropdown = () => {
     { name: "Wan-Chain", url: "https://testnet.wanscan.org/address/0xBCab4ba549886e6BEF67d9f3d381a2710316F8CA" },
     { name: "Core-DAO", url: "https://scan.test.btcs.network/address/0xBCab4ba549886e6BEF67d9f3d381a2710316F8CA" },
     // { name: "Reels-Fi Contract", url: "https://github.com/Snehagupta1907/APT-ReelFI/blob/main/web3-backend/contracts/V1/ReelsFi.sol" },
-    {name:"Manta Chain",url:"https://pacific-explorer.sepolia-testnet.manta.network/address/0xBCab4ba549886e6BEF67d9f3d381a2710316F8CA"}
+    {name:"Manta Chain",url:"https://pacific-explorer.sepolia-testnet.manta.network/address/0xBCab4ba549886e6BEF67d9f3d381a2710316F8CA"},
+    {name:"Rootstock",url:"https://explorer.testnet.rootstock.io/address/0x5c7176e3e2511577e495ae8872eb1a84fd7959e1"}
   ];
   const dropdownRef = useRef<HTMLDivElement>(null);
   const toggleDropdown = () => setIsOpen(!isOpen);
