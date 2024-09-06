@@ -35,9 +35,14 @@
 
 
 ## Bounty Tracks Applied for and Deployed Contracts Link:
-- **1. OPBNB Testnet:** <br/>
-  - Reels-Fi : https://opbnb-testnet.bscscan.com/address/0x597373218B3220425B44Ae09B52dbD0535b934dE#code
-  - Reels Fi Tokens : https://opbnb-testnet.bscscan.com/address/0xe8e68427f4E52C90cc05E1A6D86e26842a0da8d1#code
+- **1. Rootstock Testnet:** <br/>
+  - Reels-Fi : https://explorer.testnet.rootstock.io/address/0xcfa038455b54714821f291814071161c9870b891
+  - Reels Fi Tokens : https://explorer.testnet.rootstock.io/address/0x5c7176e3e2511577e495ae8872eb1a84fd7959e1
+
+- **1. Layerzero Testnet:** <br/>
+  - Sepolia and Holesky and Polygon amoy: https://testnet.layerzeroscan.com/address/0xeddfc4c35fd9a6a2c6ae3f27abcf320c65bbe707
+
+ 
 
 ## Contract Functionality:
 
