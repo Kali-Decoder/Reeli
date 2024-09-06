@@ -94,7 +94,7 @@ const DataContextProvider = ({ children }) => {
       const monetizeId = toast.loading("Monetize your post...");
       const monetizeTx = await contractInstance.createPost(true, {
         from: address,
-        value : ethers.utils.parseUnits('100', 'wei')
+        value: ethers.utils.parseUnits("100", "wei"),
       });
       await monetizeTx.wait();
       toast.success("Monetize successfull", { id: monetizeId });
@@ -111,6 +111,35 @@ const DataContextProvider = ({ children }) => {
       toast.error("Error in depositing funds");
     }
   };
+
+  async function sellYourFunds(
+    _postId: 0,
+    _depositID: 0,
+    _amount: 100,
+    _likes: 100,
+    _views: 10,
+    _shares: 10,
+    _followers: 500
+  ) {
+    try {
+      const contractInstance = await getContractInstance(
+        mainContractAddress,
+        mainContractABI
+      );
+      console.log(contractInstance, "contractInstance");
+      let txId = toast.loading("Selling your funds...");
+      const tx = await contractInstance.createPost(true, {
+        from: address,
+        value: ethers.utils.parseUnits("100", "wei"),
+      });
+      await tx.wait();
+      toast.success("Funds Sold", { id: txId });
+      return tx;
+    } catch (error) {
+      console.log(error);
+      toast.error("Error in selling funds");
+    }
+  }
 
   const mintTokens = async (toAddress: string, mintAmount: number) => {
     const mintPayload = {
@@ -182,6 +211,7 @@ const DataContextProvider = ({ children }) => {
         transferTokens,
         depositTokens,
         depositFunds,
+        sellYourFunds,
       }}
     >
       {children}

@@ -12,6 +12,7 @@
     "test": "npx hardhat test"
   },
   "devDependencies": {
-    "@nomicfoundation/hardhat-verify": "^2.0.9"
+    "@nomicfoundation/hardhat-verify": "^2.0.9",
+    "@tableland/hardhat": "^0.0.9"
   }
 }

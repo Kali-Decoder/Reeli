@@ -5,6 +5,7 @@ const ChainDropdown = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedChain, setSelectedChain] = useState<string | null>(null);
   const chains = [
+    {name:"Rootstock",url:"https://explorer.testnet.rootstock.io/address/0x5c7176e3e2511577e495ae8872eb1a84fd7959e1"},
     { name: "Aptos", url: "https://explorer.aptoslabs.com/txn/86687535/changes?network=devnet" },
     { name: "Polygon Amoy", url: "https://www.oklink.com/amoy/address/0x93073de0d67ecfbbc44321ef7e4d33bcf7f53b9a" },
     { name: "EduChain", url: "https://opencampus-codex.blockscout.com/address/0xBCab4ba549886e6BEF67d9f3d381a2710316F8CA" },
@@ -12,7 +13,6 @@ const ChainDropdown = () => {
     { name: "Core-DAO", url: "https://scan.test.btcs.network/address/0xBCab4ba549886e6BEF67d9f3d381a2710316F8CA" },
     // { name: "Reels-Fi Contract", url: "https://github.com/Snehagupta1907/APT-ReelFI/blob/main/web3-backend/contracts/V1/ReelsFi.sol" },
     {name:"Manta Chain",url:"https://pacific-explorer.sepolia-testnet.manta.network/address/0xBCab4ba549886e6BEF67d9f3d381a2710316F8CA"},
-    {name:"Rootstock",url:"https://explorer.testnet.rootstock.io/address/0x5c7176e3e2511577e495ae8872eb1a84fd7959e1"}
   ];
   const dropdownRef = useRef<HTMLDivElement>(null);
   const toggleDropdown = () => setIsOpen(!isOpen);
@@ -49,7 +49,7 @@ const ChainDropdown = () => {
           aria-expanded={isOpen}
           aria-haspopup="true"
         >
-          {selectedChain || "Select Chain"}
+          {selectedChain || "Supported Chains"}
           <svg
             className={`-mr-1 ml-2 h-5 w-5 transition-transform ${
               isOpen ? "rotate-180" : ""

@@ -60,6 +60,10 @@ const config = {
       evmVersion: "berlin",
     },
   },
+  localTableland: {
+    silent: false,
+    verbose: false,
+  },
   docgen: {
     output: "docs",
     pages: () => "api.md",
