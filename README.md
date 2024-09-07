@@ -39,8 +39,30 @@
   - Reels-Fi : https://explorer.testnet.rootstock.io/address/0xcfa038455b54714821f291814071161c9870b891
   - Reels Fi Tokens : https://explorer.testnet.rootstock.io/address/0x5c7176e3e2511577e495ae8872eb1a84fd7959e1
 
-- **1. Layerzero Testnet:** <br/>
+- **2. Layerzero Testnet:** <br/>
   - Sepolia and Holesky and Polygon amoy: https://testnet.layerzeroscan.com/address/0xeddfc4c35fd9a6a2c6ae3f27abcf320c65bbe707
+
+- **3. Envio Token Indexer Integration:** <br/>
+ ```
+  # yaml-language-server: $schema=./node_modules/envio/evm.schema.json
+name: erc20indexer
+description: ERC-20 indexer
+networks:
+  - id: 5611
+    start_block: 10861674
+    contracts:
+      - name: ERC20
+        address: "0xE7Af399C6fEc10DfC47029A28C71228D6E2fA978" #UNI
+        handler: src/EventHandlers.ts
+        events:
+          - event: "Approval(address indexed owner, address indexed spender, uint256 value)"
+          - event: "Transfer(address indexed from, address indexed to, uint256 value)"
+# Rollback on reorg mode currently incurs a performance hit on historical sync
+# while developing an indexer we recommend setting this to false
+rollback_on_reorg: false
+
+  ```
+
 
  
 
