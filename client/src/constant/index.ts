@@ -1,4 +1,4 @@
-export const tokenAddress = "0x26Ca7d950d8CCC74A1114B63b3A47d3Ba6F64916";
+export const tokenAddress = "0x6D4E4b9cEb5A92F5212c017187528bCd0c516965";
 export const tokenAbi = [
   {
     inputs: [],
@@ -571,7 +571,7 @@ export const tokenAbi = [
   },
 ];
 
-export const mainContractAddress = "0x5c7176e3e2511577E495AE8872EB1a84fD7959E1";
+export const mainContractAddress = "0xBCab4ba549886e6BEF67d9f3d381a2710316F8CA";
 export const mainContractABI = [
 	{
 		"inputs": [

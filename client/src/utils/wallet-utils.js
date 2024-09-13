@@ -2,8 +2,33 @@ import { polygon, polygonMumbai, arbitrum,optimismSepolia,mantaSepoliaTestnet,op
 import { jsonRpcProvider } from "wagmi/providers/jsonRpc";
 import { getDefaultWallets } from "@rainbow-me/rainbowkit";
 import { configureChains, createConfig } from "wagmi";
+const KiiTestnet = {
+  id: 123454321,
+  testnet: true,
+  name: 'Kii Chain Testnet',
+  rpcUrls: {
+    default: {
+      http: ['https://a.sentry.testnet.kiivalidator.com:8645'],
+    },
+    public: {
+      http: ['https://a.sentry.testnet.kiivalidator.com:8645'],
+    },
+  },
+  blockExplorers: {
+    default: {
+      name: 'Kii Chain Testnet Explorer',
+      url: 'https://app.kiichain.io/kiichain',
+    },
+  },
+  nativeCurrency: {
+    decimals: 18,
+    name: 'KII',
+    symbol: 'KII',
+  },
+};
+
 const { chains, publicClient } = configureChains(
-  [polygon, arbitrum, polygonMumbai,optimismSepolia,mantaSepoliaTestnet,opBNBTestnet,rootstockTestnet],
+  [KiiTestnet,opBNBTestnet,rootstockTestnet],
   [
     jsonRpcProvider({
       rpc: (chainId) => {
@@ -47,6 +72,12 @@ const { chains, publicClient } = configureChains(
         }else if (chainId.id == 31) {
           return {
             http: "https://public-node.testnet.rsk.co",
+            webSocket:
+              "",
+          };
+        }else if (chainId.id == 123454321) {
+          return {
+            http: "https://a.sentry.testnet.kiivalidator.com:8645",
             webSocket:
               "",
           };

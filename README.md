@@ -35,38 +35,11 @@
 
 
 ## Bounty Tracks Applied for and Deployed Contracts Link:
-- **1. Rootstock Testnet:** <br/>
-  - Reels-Fi : https://explorer.testnet.rootstock.io/address/0xcfa038455b54714821f291814071161c9870b891
-  - Reels Fi Tokens : https://explorer.testnet.rootstock.io/address/0x5c7176e3e2511577e495ae8872eb1a84fd7959e1
+## Track 3: Build Us Something Cool!  &&  Smart Contract Deployer 
+- **1. KIIChain Testnet:** <br/>
+  - Reels-Fi Tokens(Contract Address ): 0x6d4e4b9ceb5a92f5212c017187528bcd0c516965) : https://app.kiichain.io/kiichain/tx/0x4a699a7cb88ca89aa3d88cd0e6c985163e39119be6412ecef6f735e1347a8cf2
+  - Reels Fi (Contract Address ): 0xbcab4ba549886e6bef67d9f3d381a2710316f8ca): https://app.kiichain.io/kiichain/tx/0x6f4a8e18f66539b33952350d44dd564b96900cc306772069bfff5d816a8b0a0b
 
-- **2. Layerzero Testnet:** <br/>
-  - Sepolia and Holesky and Polygon amoy: https://testnet.layerzeroscan.com/address/0xeddfc4c35fd9a6a2c6ae3f27abcf320c65bbe707
-
-- **3. Envio Token Indexer Integration:** <br/>
- ```
-  # yaml-language-server: $schema=./node_modules/envio/evm.schema.json
-name: erc20indexer
-description: ERC-20 indexer
-networks:
-  - id: 5611
-    start_block: 10861674
-    contracts:
-      - name: ERC20
-        address: "0xE7Af399C6fEc10DfC47029A28C71228D6E2fA978" #UNI
-        handler: src/EventHandlers.ts
-        events:
-          - event: "Approval(address indexed owner, address indexed spender, uint256 value)"
-          - event: "Transfer(address indexed from, address indexed to, uint256 value)"
-# Rollback on reorg mode currently incurs a performance hit on historical sync
-# while developing an indexer we recommend setting this to false
-rollback_on_reorg: false
-
-  ```
-- **4. Sign Protocol on Sepolia Testnet:** <br/>
-  - Schema of User Deposit : https://testnet-scan.sign.global/schema/onchain_evm_11155111_0x1b9
-  - Schema of User Post : https://testnet-scan.sign.global/schema/onchain_evm_11155111_0x1b7
-
- 
 
 ## Contract Functionality:
 

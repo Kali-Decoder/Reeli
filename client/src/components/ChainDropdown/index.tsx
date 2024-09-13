@@ -5,6 +5,7 @@ const ChainDropdown = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedChain, setSelectedChain] = useState<string | null>(null);
   const chains = [
+    {name:"Kii Chain",url:"https://app.kiichain.io/kiichain/tx/0x4a699a7cb88ca89aa3d88cd0e6c985163e39119be6412ecef6f735e1347a8cf2"},
     {name:"Rootstock",url:"https://explorer.testnet.rootstock.io/address/0x5c7176e3e2511577e495ae8872eb1a84fd7959e1"},
     { name: "Aptos", url: "https://explorer.aptoslabs.com/txn/86687535/changes?network=devnet" },
     { name: "Polygon Amoy", url: "https://www.oklink.com/amoy/address/0x93073de0d67ecfbbc44321ef7e4d33bcf7f53b9a" },
